@@ -1,0 +1,159 @@
+<html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="Style.css">
+
+  <style>
+  
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle, #E6E6FA 0%, #6AA4EB 100%);
+      color: white;
+    }
+
+    .navbar{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      background: #6AA4EB;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      z-index: 1000;
+    }
+
+    .logo{
+      background: #E6E6FA;
+      color: #94BBE9;
+      border-radius: 50%;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .nav-links{
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a{
+      text-decoration: none;
+      background: #E6E6FA;
+      padding: 8px 18px;
+      border-radius: 20px;
+      color: #94BBE9;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover{
+      background: white;
+      font-weight: bold;
+    }
+	
+	.h1{
+		text-align: center;
+		color: white;
+	}
+    .contact{
+      min-height: 100vh;
+      padding-top: 80px; /* ruang navbar */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .contact-cards{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 900px;
+      width: 100%;
+      padding: 20px;
+      animation: fadeUp 0.8s ease;
+    }
+
+    .contact-card{
+      background: #E6E6FA;
+      color: #6AA4EB;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      transition: 0.4s;
+      cursor: pointer;
+    }
+
+    .contact-card span{
+      font-size: 40px;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .contact-card p{
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .contact-card:hover{
+      transform: translateY(-12px) scale(1.05);
+      box-shadow: 0 25px 45px rgba(106,164,235,0.6);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">AK</div>
+    <ul class="nav-links">
+      <li><a href="navbar.html">Home</a></li>
+       <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="sertifikat.html">Certificate</a></li>
+         <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+	<section class="contact">
+    <div class="contact-cards">
+		
+      <div class="contact-card">
+        <span>📧</span>
+        <p>aurelkuwaysa06@gmail.com</p>
+      </div>
+
+      <div class="contact-card">
+        <span>📱</span>
+        <p>085710313011</p>
+      </div>
+
+      <div class="contact-card">
+        <span>📸</span>
+        <p>__aurlkwys</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

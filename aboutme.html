@@ -1,0 +1,209 @@
+<html>
+<head>
+<title> About Me </title>
+<link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+	<style>
+	
+	*{
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	  font-family: "Times New Roman", serif;
+	}
+
+	body{
+	  min-height: 100vh;
+	  background: radial-gradient(circle, #E6E6FA 0%, #6AA4EB 100%);
+	}
+
+	.navbar{
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  height: 60px;
+	  background: #6AA4EB;
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  padding: 0 30px;
+	  z-index: 1000;
+	}
+
+	.logo{
+	  background: #E6E6FA;
+	  color: #94BBE9;
+	  border-radius: 50%;
+	  padding: 10px;
+	  font-weight: bold;
+	  font-size: 18px;
+	}
+
+	.nav-links{
+	  list-style: none;
+	  display: flex;
+	  gap: 20px;
+	}
+
+	.nav-links a{
+	  text-decoration: none;
+	  background: #E6E6FA;
+	  padding: 8px 18px;
+	  border-radius: 20px;
+	  color: #94BBE9;
+	  font-size: 15px;
+	  transition: 0.3s;
+	}
+
+	.nav-links a:hover{
+	  background: white;
+	  font-weight: bold;
+	}
+
+	.hero{
+	  min-height: 100vh;
+	  padding-top: 100px; /* jarak navbar */
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  gap: 60px;
+	  flex-wrap: wrap;
+	  text-align: left;
+	}
+
+	.profile img{
+	  width: 250px;
+	  height: 250px;
+	  border-radius: 50%;
+	  object-fit: cover;
+	  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+	  animation: zoomIn 1s ease forwards;
+	}
+
+	.profile img:hover{
+	  transform: translateY(-8px) scale(1.05);
+	  transition: 0.4s;
+	}
+	
+	.text-card {
+	background: #6AA4EB;
+	max-width: 900px;
+	padding: 30px;
+	border-radius: 16px;
+	box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+	}
+	
+	.text-card:hover{
+		transform: translateY(-10px);
+	}
+
+	.text-card h2{
+	  text-align: center;
+	  margin-bottom: 15px;
+
+	.text-card p{
+	  line-height: 1.7;
+	  font-size: 16px;
+	}
+	
+	.teks{
+	  max-width: 500px;
+	  color: white;
+	}
+
+	.teks h1,
+	.teks h2{
+	  margin-bottom: 10px;
+	}
+
+	.teks p{
+	  line-height: 1.6;
+	}
+
+	.grid{
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	  gap: 20px;
+	  margin-top: 20px;
+	}
+
+	.grid img{
+	  width: 100%;
+	  border-radius: 10px;
+	  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+	  transition: 0.3s;
+	}
+
+	.grid img:hover{
+	  transform: scale(1.05);
+	}
+
+	.contact p{
+	  margin: 10px 0;
+	}
+
+	@keyframes zoomIn{
+	  from{
+		opacity: 0;
+		transform: scale(0.7);
+	  }
+	  to{
+		opacity: 1;
+		transform: scale(1);
+	  }
+	}
+
+	@keyframes fotoMasuk{
+	  from{
+		opacity: 0;
+		transform: scale(0.7);
+	  }
+	  to{
+		opacity: 1;
+		transform: scale(1);
+	  }
+	}
+
+
+	</style>
+
+
+	<nav class="navbar">
+		<div class="logo">AK</div>
+		<ul class="nav-links">
+			<li><a href="navbar.html">Home</a></li>
+              <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="sertifikat.html">Certificate</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<main class="hero"> 
+		<div class="profile">
+			<img src="C:\Users\ghost\OneDrive\文档\tugasprod\pa istaqim\PROJEKAUREL\urel.jpeg.jpeg">
+		</div>
+		
+		<section class="content">
+			<div class="text-card">
+			<p>
+			<h4> 
+				Halo semua 👋 <br>
+				Saya Aurel Kuwaysa Yuan, lahir di Bogor pada 18 Juni 2010 dan saat ini berusia 15 tahun. 
+				Saya merupakan anak pertama dari lima bersaudara dengan empat orang adik perempuan, 
+				sehingga saya terbiasa belajar bertanggung jawab dan menjadi panutan dalam keluarga.
+				Saat ini saya sedang menempuh pendidikan di SMK Wikrama Bogor dengan jurusan PPLG, 
+				jurusan yang saya pilih karena ketertarikan saya pada dunia teknologi dan pemrograman. 
+				Di waktu luang, saya memiliki hobi menyanyi dan melukis sebagai sarana mengekspresikan diri dan melepas lelah. 
+				Selain itu, saya aktif mengikuti organisasi ekstrakurikuler Paskibra di sekolah karena memiliki experience dan skill di bidang tersebut, 
+				yang juga melatih kedisiplinan , kepemimpinan , dan kerja sama tim . 
+				Melalui Paskibra, saya berharap dapat terus mengembangkan potensi diri , mengharumkan nama sekolah , 
+				serta mewujudkan cita-cita saya untuk menjadi bagian dari Purna Paskibra Indonesia (PPI) 🇮🇩 di masa depan. 
+			</h4>
+			</p>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
